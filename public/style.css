@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+}
+
+#navi,
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(75, 163, 75);
+    padding: 20px;
+}
+
+#tags span{
+    padding-left: 8vh;
+}
+
+#tags a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(.5em + 1vw);
+}
+
+
+#name {
+    font-family: 'Comic Neue', cursive;
+    font-size: calc(2em + 1vw);
+    font-weight: bolder;
+    padding-right: 30vh;
+}
+
+#tags a:hover {
+    color: white;
+}
+
+#home {
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 40px;
+}
+
+#about h1 {
+    font-family: 'Comic Neue', cursive;
+    color: rgb(75, 163, 75);
+    letter-spacing: 1px;
+    font-size: calc(2em + 1vw);
+    text-decoration: underline;
+    margin-left: 100px;
+}
+
+#me {
+    display: flex;
+    height: 75vh;
+    padding: 30px;
+}
+
+#myImage,#myInfo{
+    height: 100%;
+}
+
+#myImage img{
+    height: 80%;
+}
+
+#myInfo div {
+    color: white;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: calc(.5em + 1vw);
+}
+
+#projects {
+    background-color: rgb(182, 180, 180);
+    padding: 3vh 10vw 3vh 10vw;
+}
+
+#projects h1 {
+    font-family: 'Comic Neue', cursive;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-decoration: underline;
+    margin-left: 30.5vw;
+    margin-bottom: 50px;
+}
+
+#projects ol {
+    list-style: none;
+}
+
+.weather,
+.rhythm {
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+
+.weather a,
+.rhythm a {
+    text-decoration: none;
+    color: black;
+}
+
+.weather a:hover,
+.rhythm a:hover {
+    color: white;
+}
+
+.weather video,
+.rhythm video {
+    width: 70vw;
+    margin-top: 30px;
+}
+
+#achievements h1 {
+    font-family: 'Comic Neue', cursive;
+    color: rgb(75, 163, 75);
+    letter-spacing: 1px;
+    font-size: calc(2em + 1vw);
+    text-decoration: underline;
+    margin-left: 40.5vw;
+    /* padding-top: 2vh; */
+}
+
+#achievements ol {
+    list-style: circle;
+}
+
+.myAchievements {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    font-size: calc(.5em + 1vw);
+}
+
+#contact {
+    background-color: rgb(182, 180, 180);
+    padding: 20px;
+}
+
+#contact h1 {
+    font-family: 'Comic Neue', cursive;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 3em;
+    text-decoration: underline;
+    margin-left: 39vw;
+    margin-bottom: 50px;
+}
+
+form {
+    color: white;
+    background-color: black;
+    margin: 20px 30vw 40px 30vw;
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    margin: 3px;
+    border: none;
+}
+
+input{
+    height: 25px;
+}
+
+.submit {
+    background-color: rgb(171, 171, 171);
+    font-size: calc(.2em + 1vw);
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.submit:hover{
+    background-color: rgb(75, 163, 75);;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+footer span{
+    padding-left: 10vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(.3em + 1vw);
+}
+
+footer a:hover{
+    color: white;
+}
+
+/*Text-Animation*/
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 4vh;
+    font-family: 'Comic Neue', cursive;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text span {
+    text-transform: uppercase;
+    padding-right: 0.5vw;
+    font-size: calc(2.5em + 1vw);
+    animation: zoomup 2s ease;
+    display: inline-block;
+    animation-delay: calc(200ms * var(--i));
+    color: white;
+}
+
+@keyframes zoomup {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2) translateY(-50px);
+        filter: blur(1px);
+        opacity: 0;
+    }
+}
